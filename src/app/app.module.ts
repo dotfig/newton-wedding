@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeddingModule } from './modules/wedding/wedding.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { CoreModule } from './modules/core/core.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { WeddingModule } from './modules/wedding/wedding.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    WeddingModule
+    WeddingModule,
+    CoreModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.menu {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  border: none;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: xx-large;
+}
+
+.spacer {
+  flex: 1 1 auto;
+  background-color: black;
+}
+
+.main-toolbar {
+  background-color: black;
+  color:white;
+}
