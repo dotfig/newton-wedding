@@ -2,7 +2,7 @@
 
 html, body { height: 100%; }
 html {
-  background-image: url("/assets/img/main.jpg");
+  background-image: url("/assets/img/main.JPG");
   background-size: cover;
   background-position: center;
 }
