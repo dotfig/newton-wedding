@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+
+}
+
+.title-div{
+  padding: 20px;
+}
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+.content{
+    padding: 0px 20px 50px;
+}
+
+.active{
+  background-color: gray;
+}

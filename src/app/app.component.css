@@ -1,3 +1,29 @@
 .main-web {
   background-color: black;
 }
+
+.main-txt{
+  background-color: white;
+  margin: 50px 50px 100px;
+  border-radius: 5px;
+}
+
+.wrapper {
+  color: #f5f5f5;
+  position: relative;
+  text-align: center;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}
+
+a {
+  color: #f5f5f5;
+}
+a:hover {
+  color: #777;
+  text-decoration: none;
+}  

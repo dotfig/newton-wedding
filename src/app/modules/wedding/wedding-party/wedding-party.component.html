@@ -1,1 +1,122 @@
-<p>wedding-party works!</p>
+<div class="title-div">
+    <h1 class="title">Wedding Party</h1>
+    <hr>
+</div>
+<div class="content row">
+    <div class="col-xl-2 col-lg-2"></div>
+    <div class="col-xl-3 col-lg-3">
+        <mat-card class="example-card">
+            <mat-card-header *ngIf="gmanBtn == 1">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Jerrad Skone</mat-card-title>
+                <mat-card-subtitle>Best Man</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-header *ngIf="gmanBtn == 2">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Rob Ruzewski</mat-card-title>
+                <mat-card-subtitle>Good Friend</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-header *ngIf="gmanBtn == 3">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Josh Newton</mat-card-title>
+                <mat-card-subtitle>Oldest Brother</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-header *ngIf="gmanBtn == 4">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Adam Newton</mat-card-title>
+                <mat-card-subtitle>Older Brother</mat-card-subtitle>
+            </mat-card-header>
+            <img *ngIf="gmanBtn == 1" mat-card-image src="../../../../assets/img/skone.JPG" alt="Photo of a Shiba Inu">
+            <img *ngIf="gmanBtn == 2" mat-card-image src="../../../../assets/img/bob.jpg" alt="Photo of a Shiba Inu">
+            <img *ngIf="gmanBtn == 3" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <img *ngIf="gmanBtn == 4" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p *ngIf="gmanBtn == 1">
+                    I have known Pepper my whole life and he is my best friend in the world. We grew up in New Mexico
+                    playing guns, dressing up like girls (his idea), and just making the most of the time we had
+                    together. I lived with Pepper after college for 2 years and it was such an amazing experience having
+                    my childhood friend as a roommate when I was an adult. If you see him at the wedding make sure to
+                    ask him why he is my best man.
+                </p>
+                <p *ngIf="gmanBtn == 2">
+                    I have never in my life met someone that can make me laugh like Warren and at the same time want to
+                    kill him a minute later. His humor is unmatched and very unusual. Warren and I shared a room for 2
+                    years. We even had a bathroom with his and her sinks. I have not known Warren very long but I know
+                    he will be a life long friend. Ask Warren about his financial planning robot. It is sick!
+                </p>
+                <p *ngIf="gmanBtn == 3">
+                    Pat was my closest friend in high school. We did everything together; soccer, basketball, track,
+                    worked at the same restaurant, and I even drove him home from school most days. Patrick would come
+                    over so much that my Dad would put him to work on chores around the house. We even roomed with each
+                    other my freshman year of college. He always has a great attitude and is so much fun to be around. I
+                    love him.
+                </p>
+                <p *ngIf="gmanBtn == 4">
+                    I love that Jeremy is competitive. He never made it easy for us to beat him at anything. Every time
+                    I go home I realize how much of a MAN my older brother is. He knows how to do soooo much manly
+                    stuff. I am so proud of my older brother. He is the first one of my brothers to have child and he is
+                    an awesome daddy. He wont admit this but I am a way better ping pong player than him.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-mini-fab color="primary" [ngClass]="{'active': gmanBtn == 1}"
+                    (click)="gmanClick(1)">1</button>
+                <button mat-mini-fab color="primary" [ngClass]="{'active': gmanBtn == 2}"
+                    (click)="gmanClick(2)">2</button>
+                <button mat-mini-fab color="primary" [ngClass]="{'active': gmanBtn == 3}"
+                    (click)="gmanClick(3)">3</button>
+                <button mat-mini-fab color="primary" [ngClass]="{'active': gmanBtn == 4}"
+                    (click)="gmanClick(4)">4</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="col-xl-2 col-lg-2"></div>
+    <div class="col-xl-3 col-lg-3">
+        <mat-card class="example-card">
+            <mat-card-header *ngIf="bmaidBtn == 1">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Sambrero</mat-card-title>
+                <mat-card-subtitle>Maid of Honor</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-header *ngIf="bmaidBtn == 2">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Johnna Karas</mat-card-title>
+                <mat-card-subtitle>Childhood Friend</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-header *ngIf="bmaidBtn == 3">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shannon Douglas</mat-card-title>
+                <mat-card-subtitle>Fake Friend</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-header *ngIf="bmaidBtn == 4">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Someone Else</mat-card-title>
+                <mat-card-subtitle>Boobs</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <mat-card-actions>
+                    <button mat-mini-fab color="warn" [ngClass]="{'active': bmaidBtn == 1}"
+                        (click)="bmaidClick(1)">1</button>
+                    <button mat-mini-fab color="warn" [ngClass]="{'active': bmaidBtn == 2}"
+                        (click)="bmaidClick(2)">2</button>
+                    <button mat-mini-fab color="warn" [ngClass]="{'active': bmaidBtn == 3}"
+                        (click)="bmaidClick(3)">3</button>
+                    <button mat-mini-fab color="warn" [ngClass]="{'active': bmaidBtn == 4}"
+                        (click)="bmaidClick(4)">4</button>
+                </mat-card-actions>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="col-xl-2 col-lg-2"></div>
+</div>
