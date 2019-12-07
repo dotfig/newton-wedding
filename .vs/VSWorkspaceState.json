@@ -1,4 +1,10 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\assets\\img"
+  ],
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }
