@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+}
+
+.title-div{
+  padding: 20px;
+}
+
+.content{
+    padding: 0px 20px 50px;
+}
+
+.main-txt{
+  background-color: white;
+  margin: 50px 50px 100px;
+  border-radius: 5px;
+}

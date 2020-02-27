@@ -1,24 +1,78 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-.menu {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  font-size: large;
-  color: white;
-  border: none;
-}
+@media (min-width:1066px) {
+  .menu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    border: none;
+  }
+  
+  .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: xx-large;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+    background-color: black;
+  }
+  
+  .main-toolbar {
+    background-color: black;
+    color:white;
+  }
 
-.title {
-  font-family: 'Great Vibes', cursive;
-  font-size: xx-large;
-}
+  button.mat-menu-item{
+    width: auto;
+  }
 
-.spacer {
-  flex: 1 1 auto;
-  background-color: black;
-}
+  .secondary-toolbar{
+    display: none;
+  }
 
-.main-toolbar {
-  background-color: black;
-  color:white;
-}
+  .mini-menu{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+    border: none;
+  }
+ }
+
+@media (max-width:1065px) {
+  .main-toolbar {
+    display: none;
+  }
+
+  .secondary-toolbar{
+    background-color: black;
+    color:white;
+  }
+
+  .menu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    border: none;
+  }
+  
+  .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: xx-large;
+  }
+  
+  button.mat-menu-item{
+    width: auto;
+  }
+
+  .mini-menu{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+    border: none;
+  }
+ }

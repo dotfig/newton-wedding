@@ -26,3 +26,9 @@
 .active{
   background-color: gray;
 }
+
+.main-txt{
+  background-color: white;
+  margin: 50px 50px 100px;
+  border-radius: 5px;
+}
