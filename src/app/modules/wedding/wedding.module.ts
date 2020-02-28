@@ -10,8 +10,7 @@ import { WeddingPicsComponent } from './wedding-pics/wedding-pics.component';
 import { WeddingFaqComponent } from './wedding-faq/wedding-faq.component';
 import { WeddingStuffComponent } from './wedding-stuff/wedding-stuff.component';
 import { MaterialModule } from '../material/material.module';
-
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [WeddingPartyComponent, WeddingMainComponent, WeddingStoryComponent,
@@ -19,7 +18,8 @@ import { MaterialModule } from '../material/material.module';
     WeddingPicsComponent, WeddingFaqComponent, WeddingStuffComponent],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class WeddingModule { }

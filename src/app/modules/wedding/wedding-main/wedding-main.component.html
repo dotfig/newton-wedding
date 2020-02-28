@@ -1,5 +1,16 @@
 <div id="container">
   <div id="content">
-    <h1 class="main">6.05.21</h1>
+    <h3 class="date">06.05.21</h3>
+    <h1 class="main">WE'RE GETTING MARRIED</h1>
+    <form>
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <input type="text" placeholder="Name" class="form-control" id="usr" [(ngModel)]="input_name" [ngModelOptions]="{standalone: true}">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-info" (click)="onRSVP()" [disabled]="input_name.trim().length == 0">RSVP</button>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
