@@ -2,12 +2,12 @@
   <div id="content">
     <h3 class="date">06.05.21</h3>
     <h1 class="main">WE'RE GETTING MARRIED</h1>
-    <form>
+      <form action="mailto:a98newt@comcast.net?Subject=WeddingRSVP" method="post" enctype="text/plain">
       <div class="form-group">
         <div class="input-group mb-3">
           <input type="text" placeholder="Name" class="form-control" id="usr" [(ngModel)]="input_name" [ngModelOptions]="{standalone: true}">
           <div class="input-group-append">
-            <button type="button" class="btn btn-info" (click)="onRSVP()" [disabled]="input_name.trim().length == 0">RSVP</button>
+            <button type="submit" class="btn btn-info" (click)="onRSVP()" [disabled]="input_name.trim().length == 0">RSVP</button>
           </div>
         </div>
       </div>
