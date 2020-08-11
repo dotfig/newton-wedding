@@ -2,7 +2,9 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 .body { 
-  background-image: url("https://i.imgur.com/OgrhB17.jpg");
+  background-image: url("https://i.imgur.com/hTmQ5Lf.jpg");
+  /* background-image: url("https://i.imgur.com/OgrhB17.jpg"); */
+  /* background-image: url("https://i.imgur.com/PBYLnSk.jpg"); */
   background-size: cover;
   background-position: center;
   height: 100vh;

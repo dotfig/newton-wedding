@@ -3,7 +3,8 @@
 }
 
 .wrapper {
-  color: #f5f5f5;
+  color: lightcoral;
+  text-shadow: 0px 0px 7px rgb(135, 157, 153);
   position: relative;
   text-align: center;
 }
@@ -15,7 +16,8 @@
 }
 
 a {
-  color: #f5f5f5;
+  color: lightcoral;
+  text-shadow: 0px 0px 2px rgb(135, 157, 153);
 }
 a:hover {
   color: #777;
