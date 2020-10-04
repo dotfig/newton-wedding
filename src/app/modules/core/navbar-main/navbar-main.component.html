@@ -1,35 +1,57 @@
 <mat-toolbar color="secondary" class="main-toolbar">
   <span class="spacer"></span>
-  <button mat-menu-item class="menu" [routerLink]="['/story']">Our Story</button>
-  <span> | </span>
-  <button mat-menu-item class="menu" [routerLink]="['/party']">Wedding Party</button>
+  <!-- <button mat-menu-item class="menu" [routerLink]="['/story']">
+    Our Story
+  </button>
+  <span> | </span> -->
+  <button mat-menu-item class="menu" [routerLink]="['/party']">
+    Wedding Party
+  </button>
   <span> | </span>
   <button mat-menu-item class="menu" [routerLink]="['/travel']">Travel</button>
   <span> | </span>
-  <button mat-menu-item class="menu" [routerLink]="['/sched']">Schedule</button>
-  <span> | </span>
-  <button mat-menu-item class="menu title" [routerLink]="['/']">The Newtons</button>
+  <button mat-menu-item class="menu title" [routerLink]="['/']">
+    The Newtons
+  </button>
   <span> | </span>
   <button mat-menu-item class="menu" [routerLink]="['/reg']">Registry</button>
   <span> | </span>
+  <button mat-menu-item class="menu" [routerLink]="['/sched']">Schedule</button>
+  <!-- <span> | </span>
   <button mat-menu-item class="menu" [routerLink]="['/pics']">Photos</button>
   <span> | </span>
   <button mat-menu-item class="menu" [routerLink]="['/faq']">FAQ</button>
   <span> | </span>
-  <button mat-menu-item class="menu" [routerLink]="['/stuff']">Things To Do</button>
+  <button mat-menu-item class="menu" [routerLink]="['/stuff']">Things To Do</button> -->
   <span class="spacer"></span>
 </mat-toolbar>
 <mat-toolbar color="secondary" class="secondary-toolbar">
   <button mat-menu-item [matMenuTriggerFor]="test" class="menu">|||</button>
-  <button mat-menu-item class="menu title" [routerLink]="['/']">The Newtons</button>
+  <button mat-menu-item class="menu title" [routerLink]="['/']">
+    The Newtons
+  </button>
   <mat-menu #test="matMenu">
-    <button mat-menu-item class="mini-menu" [routerLink]="['/story']">Our Story</button>
-    <button mat-menu-item class="mini-menu" [routerLink]="['/party']">Wedding Party</button>
-    <button mat-menu-item class="mini-menu" [routerLink]="['/travel']">Travel</button>
-    <button mat-menu-item class="mini-menu" [routerLink]="['/sched']">Schedule</button>
-    <button mat-menu-item class="mini-menu" [routerLink]="['/reg']">Registry</button>
-    <button mat-menu-item class="mini-menu" [routerLink]="['/pics']">Photos</button>
+    <button mat-menu-item class="mini-menu" [routerLink]="['/story']">
+      Our Story
+    </button>
+    <button mat-menu-item class="mini-menu" [routerLink]="['/party']">
+      Wedding Party
+    </button>
+    <button mat-menu-item class="mini-menu" [routerLink]="['/travel']">
+      Travel
+    </button>
+    <button mat-menu-item class="mini-menu" [routerLink]="['/sched']">
+      Schedule
+    </button>
+    <button mat-menu-item class="mini-menu" [routerLink]="['/reg']">
+      Registry
+    </button>
+    <button mat-menu-item class="mini-menu" [routerLink]="['/pics']">
+      Photos
+    </button>
     <button mat-menu-item class="mini-menu" [routerLink]="['/faq']">FAQ</button>
-    <button mat-menu-item class="mini-menu" [routerLink]="['/stuff']">Things To Do</button>
+    <button mat-menu-item class="mini-menu" [routerLink]="['/stuff']">
+      Things To Do
+    </button>
   </mat-menu>
 </mat-toolbar>
