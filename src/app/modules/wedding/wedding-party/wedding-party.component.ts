@@ -7,30 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeddingPartyComponent implements OnInit {
 
-  gmanBtn: number = 1;
-  bmaidBtn: number = 1;
+  brides: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  gmanClick(btn: number) {
-    this.gmanBtn = btn;
-
-    switch (btn) {
-      case 1: {
-      }
+  onCheck(){
+    if (this.brides){
+      this.brides = false;
+    }else{
+      this.brides = true;
     }
   }
-
-  bmaidClick(btn: number) {
-    this.bmaidBtn = btn;
-
-    switch (btn) {
-      case 1: {
-      }
-    }
-  }
-
 }

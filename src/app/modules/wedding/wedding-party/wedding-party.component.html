@@ -1,9 +1,164 @@
 <div class="main-txt">
-    <div class="title-div">
-        <h1 class="title">Wedding Party</h1>
-        <hr>
+  <div class="title-div">
+    <h1 class="title">Wedding Party</h1>
+    <hr />
+  </div>
+  <div class="content row">
+    <div class="col-sm-12 row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <!-- <p>Groomsmen</p> -->
+        <label class="switch">
+          <input (change)="onCheck()" type="checkbox" [checked]="brides"/>
+          <span class="slider round"></span>
+        </label>
+        <!-- <p>Bridesmaids</p> -->
+      </div>
+      <div class="col-sm-3"></div>
     </div>
-    <div class="content row">
-
+    <div *ngIf="brides" class="card-group">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="https://www.insideedition.com/sites/default/files/styles/content_full/public/images/2018-06/istock-829471540.jpg?itok=6P3BxAyN"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Shannon</h5>
+          <p class="card-text">
+            Shannon and I have been friends since middle school! She is the
+            sweetest person and an ace at trivia. We LOVE going to wine BINGO
+            any chance we get. You can expect she’ll be the first one on the
+            dance floor, and the last one to leave it!
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Maid of Honor</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="https://www.insideedition.com/sites/default/files/styles/content_full/public/images/2018-06/istock-829471540.jpg?itok=6P3BxAyN"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Sam</h5>
+          <p class="card-text">
+            Sam and I met during our summer internship, where we quickly became
+            best friends. She is the kindest, most generous person you’ll ever
+            meet! Sam is always the life of the party, and you’ll probably find
+            her getting the dance floor started with champagne in hand when the
+            Macarena is played!
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Bridesmaid</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="https://www.insideedition.com/sites/default/files/styles/content_full/public/images/2018-06/istock-829471540.jpg?itok=6P3BxAyN"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Heather</h5>
+          <p class="card-text">
+            Heather and I met in the 5th grade, where we spent many days after
+            school talking when Heather was having drum lessons. LOL Our
+            friendship has grown and we LOVE designing mine and Aaron’s house.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Bridesmaid</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="https://www.insideedition.com/sites/default/files/styles/content_full/public/images/2018-06/istock-829471540.jpg?itok=6P3BxAyN"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Jen</h5>
+          <p class="card-text">
+            Jen is my soon to be sister-in-law who is always there for us, so of
+            course I wanted her by my side on my wedding day. I am so excited to
+            have a sister and love being an aunt to her new daughter!
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Bridesmaid</small>
+        </div>
+      </div>
     </div>
+    <div *ngIf="!brides" class="card-group">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="http://res.freestockphotos.biz/pictures/10/10253-a-young-business-man-in-a-suit-isolated-on-a-white-background-pv.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Josh</h5>
+            <p class="card-text">
+              Josh is my brother
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Best Man</small>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="http://res.freestockphotos.biz/pictures/10/10253-a-young-business-man-in-a-suit-isolated-on-a-white-background-pv.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Adam</h5>
+            <p class="card-text">
+              Adam is my brother
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Best Man</small>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="http://res.freestockphotos.biz/pictures/10/10253-a-young-business-man-in-a-suit-isolated-on-a-white-background-pv.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Jerrad</h5>
+            <p class="card-text">
+              Jerrad is my friend
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Groomsman</small>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="http://res.freestockphotos.biz/pictures/10/10253-a-young-business-man-in-a-suit-isolated-on-a-white-background-pv.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Rob</h5>
+            <p class="card-text">
+              Rob is my friend
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Groomsman</small>
+          </div>
+        </div>
+      </div>
+  </div>
 </div>
