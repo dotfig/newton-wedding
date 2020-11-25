@@ -10,7 +10,7 @@
       <div class="col-sm-3">
         <!-- <p>Groomsmen</p> -->
         <label class="switch">
-          <input (change)="onCheck()" type="checkbox" [checked]="brides"/>
+          <input (change)="onCheck()" type="checkbox" [checked]="brides" />
           <span class="slider round"></span>
         </label>
         <!-- <p>Bridesmaids</p> -->
@@ -94,71 +94,63 @@
         </div>
       </div>
     </div>
-    <div *ngIf="!brides" class="card-group">
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="../../../../assets/img/josh.png"
-            alt="Picture of josh"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Josh</h5>
-            <p class="card-text">
-              Josh is my brother
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Best Man</small>
-          </div>
+    <div *ngIf="!brides" class="card-group col-sm-12 row">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="../../../../assets/img/josh.png"
+          alt="Picture of josh"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Josh</h5>
+          <p class="card-text">Josh is my brother</p>
         </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="http://res.freestockphotos.biz/pictures/10/10253-a-young-business-man-in-a-suit-isolated-on-a-white-background-pv.jpg"
-            alt="Picture of adam"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Adam</h5>
-            <p class="card-text">
-              Adam is my brother
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Best Man</small>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="../../../../assets/img/jerrad.jpg"
-            alt="Picture of jerrad"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Jerrad</h5>
-            <p class="card-text">
-              Jerrad is my friend
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Groomsman</small>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="../../../../assets/img/bob.jpg"
-            alt="Picture of rob"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Rob</h5>
-            <p class="card-text">
-              Rob is my friend
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Groomsman</small>
-          </div>
+        <div class="card-footer">
+          <small class="text-muted">Best Man</small>
         </div>
       </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="../../../../assets/img/adam.jpg"
+          alt="Picture of adam"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Adam</h5>
+          <p class="card-text">Adam is my brother</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Best Man</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="../../../../assets/img/jerrad.jpg"
+          alt="Picture of jerrad"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Jerrad</h5>
+          <p class="card-text">Jerrad is my friend</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Groomsman</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="../../../../assets/img/bob.jpg"
+          alt="Picture of rob"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rob</h5>
+          <p class="card-text">Rob is my friend</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Groomsman</small>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
